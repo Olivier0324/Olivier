@@ -1,16 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const skills = [
-  "React.js",
-  "Tailwind CSS",
-  "JavaScript (ES6+)",
-  "TypeScript",
-  "Framer Motion",
-  "Git & GitHub",
-  "REST APIs",
-  "Responsive Design",
-];
+const skills = ["React JS", "Tailwind CSS", "JavaScript", "Figma",'Balsimiq', "Git And Github", "REST APIs","HTML","CSS","Adobe Photoshop","Adobe Illustrator","AI Tools: ChatGPT, ..."];
 
 const About = () => {
   return (
