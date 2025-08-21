@@ -2,13 +2,12 @@
 import { Github, Youtube, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const socials = [
-  { name: "GitHub", href: "https://github.com/your-username", icon: Github },
-  { name: "YouTube", href: "https://youtube.com/your-channel", icon: Youtube },
-  { name: "Facebook", href: "https://facebook.com/your-profile", icon: Facebook },
-  { name: "Instagram", href: "https://instagram.com/your-profile", icon: Instagram },
-  { name: "WhatsApp", href: "https://wa.me/your-number", icon: MessageCircle }, // replace number like 2507XXXXXXX
+  { name: "GitHub", href: "https://github.com/Olivier0324", icon: Github },
+  { name: "YouTube", href: "https://www.youtube.com/channel/UCljl7CAET2pkXamlE9ADXrg", icon: Youtube },
+  { name: "Facebook", href: "https://web.facebook.com/cyuzuzokwizera.ollyolivis", icon: Facebook },
+  { name: "Instagram", href: "https://www.instagram.com/cyuzuzokwizeraolivier/", icon: Instagram },
+  { name: "WhatsApp", href: "https://wa.me/250789097329", icon: MessageCircle }, // replace number like 2507XXXXXXX
 ];
-
 export default function Footer() {
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 py-10 mt-20">

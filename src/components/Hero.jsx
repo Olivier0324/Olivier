@@ -2,6 +2,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
 import { fadeUp } from "../lib/motion";
+import olivier from '../assets/images/Olivier.png'
 
 export default function Hero() {
   return (
@@ -14,15 +15,15 @@ export default function Hero() {
         className="space-y-6"
       >
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
-          Hi, I’m <span className="text-indigo-600 dark:text-indigo-400">LittleTehie</span>
+          Hi, I’m <span className="text-indigo-600 dark:text-indigo-400">Olivier</span>
         </h1>
 
         <TypeAnimation
           sequence={[
             "I am a Frontend Developer", 2000,
             "I am a UI/UX Designer", 2000,
-            "I am a React Enthusiast", 2000,
-            "I am a Software Engineer", 2000,
+            "I am a Graphic Designer", 2000,
+            "I am a Junior Prompt Engineer", 2000,
           ]}
           speed={50}
           wrapper="span"
@@ -31,16 +32,16 @@ export default function Hero() {
         />
 
         <p className="text-gray-600 dark:text-gray-400 max-w-md">
-          I build modern, fast, and responsive web applications with React and Tailwind CSS.  
+          I build modern, fast, and responsive web applications with HTML, CSS Javascript, Figma, React and Tailwind CSS. 
           Let’s create something amazing together!
         </p>
 
         <div className="flex gap-4">
           <a
-            href="#projects"
+            href="https://drive.google.com/file/d/1-KKvjbPYrMof9SDTTWO16urOjUnWg8Im/view?usp=sharing"
             className="px-5 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow"
           >
-            View My Work
+            Download my CV
           </a>
           <a
             href="#contact"
@@ -59,9 +60,9 @@ export default function Hero() {
         className="flex justify-center"
       >
         <img
-          src="https://images.pexels.com/photos/3201580/pexels-photo-3201580.jpeg"
+          src={olivier}
           alt="Developer illustration"
-          className="rounded-2xl shadow-lg w-80 md:w-full object-cover"
+          className="rounded-2xl shadow-lg w-full md:w-1/2 object-cover"
         />
       </motion.div>
     </section>

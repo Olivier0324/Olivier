@@ -41,7 +41,7 @@ export default function About() {
         viewport={{ once: true }}
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-10"
       >
-        {["React", "Tailwind", "JavaScript", "UI/UX", "Git", "REST APIs"].map(
+        {["React JS", "Tailwind CSS", "JavaScript", "Figma",'Balsimiq', "Git And Github", "REST APIs","HTML","CSS","Adobe Photoshop","Adobe Illustrator","AI Tools: ChatGPT, ..."].map(
           (skill) => (
             <div
               key={skill}
