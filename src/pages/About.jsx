@@ -26,7 +26,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Hi, I’m <span className="font-semibold">LittleTehie</span>, a passionate Frontend Developer
+          Hi, I’m <span className="font-semibold">CYUZUZO KWIZERA Olivier</span>, a passionate Frontend Developer
           who loves building modern and interactive web experiences using{" "}
           <span className="font-semibold">React</span> and{" "}
           <span className="font-semibold">Tailwind CSS</span>.  
