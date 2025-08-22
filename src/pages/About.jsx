@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const skills = ["React JS", "Tailwind CSS", "JavaScript", "Figma",'Balsimiq', "Git And Github", "REST APIs","HTML","CSS","Adobe Photoshop","Adobe Illustrator","AI Tools: ChatGPT, ..."];
+const skills = ["React JS", "Tailwind CSS", "JavaScript", "Figma",'Balsimiq', "Git And Github", "REST APIs","HTML","CSS","Adobe Photoshop","Adobe Illustrator","Communicating with AI Tools","Basic CLI"];
 
 const About = () => {
   return (
-    <section className="py-16 px-6 md:px-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+    <section className="py-16 px-6 md:px-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-500" id="about">
       <div className="max-w-4xl mx-auto text-center">
         {/* Heading */}
         <motion.h2

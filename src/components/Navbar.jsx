@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur border-b border-gray-200 dark:border-gray-800 z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="font-bold text-xl">Olivier</h1>
+        <a href="#home" className="font-bold text-xl md:hover:scale-[150%] transition-all duration-700">Olivier</a>
 
         <div className="flex items-center gap-4">
           <a href="#projects" className="md:hover:scale-[70%] transition-all duration-700">Projects</a>
