@@ -1,6 +1,6 @@
 // src/pages/Projects.jsx
 import { useState } from "react";
-import { projects } from "../dada/projects";
+import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import FilterBar from "../components/FilterBar";
 
