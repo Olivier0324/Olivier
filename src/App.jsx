@@ -1,3 +1,5 @@
+
+import ChatBotWidget from "./components/ChatBotWidget";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -14,7 +16,8 @@ export default function App() {
       <Projects />
       <About />
       <Contact />
-      <Footer/>
+      <Footer />
+     <ChatBotWidget/>
     </div>
   );
 }
