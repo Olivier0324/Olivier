@@ -68,12 +68,12 @@ const ProjectsWidget = () => {
 
 const ContactWidget = () => (
   <ul className="space-y-2 text-sm">
-    <li><strong>Email:</strong> <a className="text-blue-600 dark:text-blue-400" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
-    <li><strong>WhatsApp:</strong> <a className="text-blue-600 dark:text-blue-400" href={CONTACT.whatsapp} target="_blank" rel="noreferrer">{CONTACT.whatsapp}</a></li>
-    <li><strong>GitHub:</strong> <a className="text-blue-600 dark:text-blue-400" href={CONTACT.github} target="_blank" rel="noreferrer">{CONTACT.github}</a></li>
-    <li><strong>YouTube:</strong> <a className="text-blue-600 dark:text-blue-400" href={CONTACT.youtube} target="_blank" rel="noreferrer">{CONTACT.youtube}</a></li>
-    <li><strong>Instagram:</strong> <a className="text-blue-600 dark:text-blue-400" href={CONTACT.instagram} target="_blank" rel="noreferrer">{CONTACT.instagram}</a></li>
-    <li><strong>Facebook:</strong> <a className="text-blue-600 dark:text-blue-400" href={CONTACT.facebook} target="_blank" rel="noreferrer">{CONTACT.facebook}</a></li>
+    <li className="flex items-center gap-1"><strong className="text-blue-800">Email:</strong> <a className="text-gray-600 dark:text-gray-800" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
+    <li className="flex items-center gap-1"><strong className="text-blue-800">WhatsApp:</strong> <a className="text-gray-600 dark:text-gray-800" href={CONTACT.whatsapp} target="_blank" rel="noreferrer">{CONTACT.whatsapp}</a></li>
+    <li className="flex items-center gap-1"><strong className="text-blue-800">GitHub:</strong> <a className="text-gray-600 dark:text-gray-800" href={CONTACT.github} target="_blank" rel="noreferrer">{CONTACT.github}</a></li>
+    <li className="flex items-center gap-1"><strong className="text-blue-800">YouTube:</strong> <a className="text-gray-600 dark:text-gray-800" href={CONTACT.youtube} target="_blank" rel="noreferrer">{CONTACT.youtube}</a></li>
+    <li className="flex items-center gap-1"><strong className="text-blue-800">Instagram:</strong> <a className="text-gray-600 dark:text-gray-800" href={CONTACT.instagram} target="_blank" rel="noreferrer">{CONTACT.instagram}</a></li>
+    <li className="flex items-center gap-1"><strong className="text-blue-800">Facebook:</strong> <a className="text-gray-600 dark:text-gray-800" href={CONTACT.facebook} target="_blank" rel="noreferrer">{CONTACT.facebook}</a></li>
   </ul>
 );
 
@@ -107,7 +107,7 @@ class ActionProvider {
 
   showWelcome = () => {
     const msg = this.createChatBotMessage(
-      "Hi, I’m your portfolio assistant. What would you like to explore?",
+      "Hi, I’m Olivier's assistant. What would you like to explore?",
       { widget: "quickOptions" }
     );
     this.add(msg);
@@ -207,17 +207,18 @@ export default function ChatBotWidget() {
         className="fixed bottom-5 right-5 z-50 rounded-full p-3 shadow-lg bg-blue-600 text-white hover:opacity-90 focus:outline-none"
         aria-label={open ? "Close chat" : "Open chat"}
       >
-        {open ? <X className="w-5 h-5" /> : <MessageSquare className="w-5 h-5" />}
+        {open ? <X className="w-5 h-5" /> : <MessageSquare className="w-5 h-5 " />}
       </button>
 
       {/* Chat window */}
       {open && (
-        <div className="fixed bottom-20 right-5 z-50 w-[22rem] max-w-[90vw] rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700 bg-white">
+        <div className="fixed bottom-20 right-5 z-50 w-[22rem] max-w-[90vw] rounded-2xl overflow-hidden shadow-2xl border-0 border-gray-200 dark:border-gray-700 bg-white focus:outline-hidden focus:border-0">
           <Chatbot
             config={config}
             messageParser={MessageParser}
             actionProvider={ActionProvider}
                       placeholderText="Type: skills, projects, contact, about…"
+                    
                       
                       
           />

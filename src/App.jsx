@@ -1,4 +1,5 @@
 
+import ChatAgent from "./components/ChatAgent";
 import ChatBotWidget from "./components/ChatBotWidget";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -17,7 +18,8 @@ export default function App() {
       <About />
       <Contact />
       <Footer />
-     <ChatBotWidget/>
+      {/* <ChatBotWidget/> */}
+      <ChatAgent/>
     </div>
   );
 }
